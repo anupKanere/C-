@@ -7,6 +7,7 @@
  -  can be invoked without the help of any object
  -  it cannot access the members directly by their names and need object _name.member_name
     to acecss any member
+-   we can also make clas as a friend ...syntax : `friend class className`;
 */
 using namespace std;
 
@@ -17,11 +18,12 @@ private:
     int y;
 
 public:
-    void setData(int a, int b)
+    void setData(int a, int b) 
     {
         x = a;
         y = b;
     }
+
     friend Sum addCoordinates(Sum s1, Sum s2); // Declaration of friend function
     void printCoordinates();
 };
