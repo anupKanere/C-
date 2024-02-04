@@ -1,14 +1,15 @@
 #include <iostream>
+using namespace std;
 
 // Base class (or Parent class)
 class Animal {
 public:
     void eat() {
-        std::cout << "Animal is eating." << std::endl;
+        cout << "Animal is eating." << endl;
     }
 
     void sleep() {
-        std::cout << "Animal is sleeping." << std::endl;
+        cout << "Animal is sleeping." << endl;
     }
 };
 
@@ -16,7 +17,7 @@ public:
 class Dog : public Animal {
 public:
     void bark() {
-        std::cout << "Dog is barking." << std::endl;
+        cout << "Dog is barking." << endl;
     }
 };
 
